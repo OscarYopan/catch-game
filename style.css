@@ -71,10 +71,34 @@ h1 {
   margin-top: -100vh;
 }
 
-/* .choose-enemy-btn {
-  background-color: var(--color3);
+.enemy-list {
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.enemy-list li {
+  list-style-type: none;
+  margin: 1.5rem;
+}
+
+.choose-enemy-btn {
   cursor: pointer;
-} */
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 1rem;
+  color: white;
+  font-size: 1.4rem;
+  font-family: inherit;
+  padding: 1rem;
+  width: 15rem;
+  height: 15rem;
+}
+
+.choose-enemy-btn:hover {
+  transform: scale(1.2);
+}
 
 .choose-enemy-btn img {
   height: 100px;
