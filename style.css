@@ -4,14 +4,22 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color1: #D93D59;
+  --color2: #400124;
+  --color3: #94A66D;
+  --color4: #F2CDAC;
+  --color5: #F27A5E;
+  /* https://color.adobe.com/pt/trends/Game-design?page=2KC */
+}
+
 html{
-  font-family: 'Roboto', sans-serif;
+  background-color: var(--color2);
+  font-family: 'Press Start 2P', sans-serif;
   font-size: 62.5%;
 }
 
 body{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
 }
