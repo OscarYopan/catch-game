@@ -14,12 +14,66 @@
 }
 
 html{
-  background-color: var(--color2);
   font-family: 'Press Start 2P', sans-serif;
   font-size: 62.5%;
 }
 
 body{
+  background-color: var(--color3);
+  color: var(--color2);
   height: 100vh;
   overflow: hidden;
+  text-align: center;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  margin-bottom: 4rem;
+  font-size: 3rem;
+}
+
+.btn {
+  border: 0;
+  background-color: var(--color4);
+  color: var(--color3);
+  font-family: inherit;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 1rem;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:hover {
+  color: var(--color2);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.screen.up {
+  
+}
+
+/* .choose-enemy-btn {
+  background-color: var(--color3);
+  cursor: pointer;
+} */
+
+.choose-enemy-btn img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
 }
