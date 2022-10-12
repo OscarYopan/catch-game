@@ -7,14 +7,49 @@
   <title>Document</title>
   <!--Style-->
   <link rel="stylesheet" href="style.css">
-  <!--Style Font-AWesome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--Font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
+  <div class="screen">
+    <h1>Catch me, if you can!</h1>
+    <button class="btn" id="start-btn">Play Game</button>
+  </div>
+
+  <div class="screen">
+    <h1>Choose you enemy.</h1>
+    <ul class="enemy-list">
+      <li>
+        <button class="choose-enemy-btn">
+          <p>Zombie</p>
+          <img src="https://pngimg.com/uploads/zombie/zombie_PNG18.png" alt="zombie">
+        </button>
+      </li>
+
+      <button class="choose-enemy-btn">
+        <p>Vampire</p>
+        <img src="https://pngimg.com/uploads/vampire/vampire_PNG4.png" alt="vampire">
+      </button>
+    </li>
+
+    <button class="choose-enemy-btn">
+      <p>Werewolf</p>
+      <img src="https://pngimg.com/uploads/werewolf/werewolf_PNG46.png" alt="werewolf">
+    </button>
+  </li>
+    </ul>
+  </div>
+
+  <div class="screen game-container">
+    <h3 id="time">Time: 00:00</h3>
+    <h3 id="score">Score: 0</h3>
+    <h5 id="message">
+      Are you alive yet?<br>
+      You are Playing an impossible game!!
+    </h5>
+  </div>
   
 </body>
 <script src="script.js"></script>
