@@ -80,12 +80,12 @@ h1 {
 
 .enemy-list li {
   list-style-type: none;
-  margin: 1.5rem;
+  margin: 1rem;
 }
 
 .choose-enemy-btn {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.3);
+  cursor: ;
+  background-color: rgba(0, 0, 0, 0.2);
   border: 3px solid var(--color2);
   border-radius: 1rem;
   color: white;
@@ -97,7 +97,11 @@ h1 {
 }
 
 .choose-enemy-btn:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+.choose-enemy-btn:active {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .choose-enemy-btn img {
