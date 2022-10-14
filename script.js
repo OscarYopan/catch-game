@@ -25,10 +25,24 @@ ChooseEnemyBtn.forEach(btn => {
 })
 
 function createEnemy() {
-  
+  const enemy = document.createElement('div')
+  enemy.classList.add('enemy')
+  const { x, y } = getRandomLocation()
+  enemy.style.top = `${y}px`
+  enemy.style.left = `${x}px`
+  enemy.innerHTML = `<img src="${selectEnemy.src}" alt="${selectEnemy.alt}"/>`
+
+  enemy.addEventListener('click', catchEnemy)
+
+  gameContainer.appendChild(enemy)
 }
 
-function startGame() {
-  
+function getRandomLocation() {
+  const width = window.innerWidth
+  const height = window.innerHeight
+  const x = Math.random() * (width - 200) + 100
+  const y = Math.random() * (height - 200) + 100
+
+  return { x, y }
 }
 
