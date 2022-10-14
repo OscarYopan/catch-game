@@ -60,6 +60,22 @@ function getRandomLocation() {
 }
 
 function catchEnemy() {
-  console.log(123);
+  increaseScore()
+  this.classList.add('caught')
+  setTimeout(() => this.remove, 2000)
+  addEnemy()
 }
 
+function addEnemy() {
+  setTimeout(createEnemy, 1000)
+  setTimeout(createEnemy, 1500)
+
+}
+
+function increaseScore() {
+  score++
+  if(score > 19) {
+    messageEl.classList.add('visible')
+  }
+  scoreEl.innerHTML = `Score: ${score}`
+}
