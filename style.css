@@ -19,6 +19,7 @@ html{
 }
 
 body{
+  background: url('https://img.freepik.com/free-vector/little-squares-pattern_1053-160.jpg?w=740&t=st=1665930400~exp=1665931000~hmac=9da92607f77bcb28f4604dca4d88adfcc778611d26501550a84a36fdf478893f');
   background-color: var(--color3);
   color: var(--color2);
   height: 100vh;
@@ -47,7 +48,7 @@ h1 {
 
 .btn {
   border: 0;
-  background-color: var(--color4);
+  background-color: var(--color1);
   color: var(--color3);
   font-family: inherit;
   padding: 1rem 2rem;
